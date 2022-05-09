@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Contar caracteres</title>
+  <script type="text/javascript">
+    function wordCount() {
+
+      textoArea = document.getElementById("area").value;
+
+      numeroCaracteres = textoArea.length;
+
+      textoAreaDividido = textoArea.split(" ");
+      numeroPalabras = textoAreaDividido.length;
+
+      tC = (numeroCaracteres == 1) ? " carácter" : " caracteres";
+
+      alert(numeroCaracteres + tC + "\n");
+    }
+  </script>
+
+</head>
+
+<body>
+  <h1>Contar caracteres</h1>
+
+
+  <FORM ID="formulario" ACTION="#">
+    <TEXTAREA ID="area" COLS=40 ROWS=10>
+ </TEXTAREA><BR>
+    <INPUT TYPE="button" VALUE="Contar los caracteres" onClick="wordCount();">
+  </FORM>
+
+</body>
+
+</html>
